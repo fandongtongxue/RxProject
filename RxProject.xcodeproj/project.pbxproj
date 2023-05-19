@@ -14,10 +14,10 @@
 		DC2D6C252A16FB8B009D244C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2D6C242A16FB8B009D244C /* Assets.xcassets */; };
 		DC2D6C282A16FB8B009D244C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2D6C262A16FB8B009D244C /* LaunchScreen.storyboard */; };
 		DC2D6C302A16FC0B009D244C /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2D6C2F2A16FC0B009D244C /* SearchModel.swift */; };
-		DC2D6C332A16FC83009D244C /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DC2D6C322A16FC83009D244C /* RxAlamofire */; };
 		DC2D6C352A16FC99009D244C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2D6C342A16FC99009D244C /* SearchViewModel.swift */; };
 		DC2D6C372A1700A0009D244C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2D6C362A1700A0009D244C /* SearchCell.swift */; };
-		DC4D5F822A1702E900630B8B /* HandyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DC4D5F812A1702E900630B8B /* HandyJSON */; };
+		DCE8621D2A1724DE00F1F6A1 /* RxFDNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = DCE8621C2A1724DE00F1F6A1 /* RxFDNetwork */; };
+		DCE8621F2A17484700F1F6A1 /* RxFDNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8621E2A17484700F1F6A1 /* RxFDNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +32,7 @@
 		DC2D6C2F2A16FC0B009D244C /* SearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		DC2D6C342A16FC99009D244C /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		DC2D6C362A1700A0009D244C /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		DCE8621E2A17484700F1F6A1 /* RxFDNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFDNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,8 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC2D6C332A16FC83009D244C /* RxAlamofire in Frameworks */,
-				DC4D5F822A1702E900630B8B /* HandyJSON in Frameworks */,
+				DCE8621D2A1724DE00F1F6A1 /* RxFDNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +76,7 @@
 				DC2D6C292A16FB8B009D244C /* Info.plist */,
 				DC2D6C342A16FC99009D244C /* SearchViewModel.swift */,
 				DC2D6C362A1700A0009D244C /* SearchCell.swift */,
+				DCE8621E2A17484700F1F6A1 /* RxFDNetwork.swift */,
 			);
 			path = RxProject;
 			sourceTree = "<group>";
@@ -97,8 +98,7 @@
 			);
 			name = RxProject;
 			packageProductDependencies = (
-				DC2D6C322A16FC83009D244C /* RxAlamofire */,
-				DC4D5F812A1702E900630B8B /* HandyJSON */,
+				DCE8621C2A1724DE00F1F6A1 /* RxFDNetwork */,
 			);
 			productName = RxProject;
 			productReference = DC2D6C182A16FB8A009D244C /* RxProject.app */;
@@ -129,8 +129,7 @@
 			);
 			mainGroup = DC2D6C0F2A16FB8A009D244C;
 			packageReferences = (
-				DC2D6C312A16FC83009D244C /* XCRemoteSwiftPackageReference "RxAlamofire" */,
-				DC4D5F802A1702E900630B8B /* XCRemoteSwiftPackageReference "HandyJSON" */,
+				DCE8621B2A1724DE00F1F6A1 /* XCRemoteSwiftPackageReference "RxFDNetwork" */,
 			);
 			productRefGroup = DC2D6C192A16FB8A009D244C /* Products */;
 			projectDirPath = "";
@@ -164,6 +163,7 @@
 				DC2D6C352A16FC99009D244C /* SearchViewModel.swift in Sources */,
 				DC2D6C1C2A16FB8A009D244C /* AppDelegate.swift in Sources */,
 				DC2D6C1E2A16FB8A009D244C /* SceneDelegate.swift in Sources */,
+				DCE8621F2A17484700F1F6A1 /* RxFDNetwork.swift in Sources */,
 				DC2D6C302A16FC0B009D244C /* SearchModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,34 +382,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DC2D6C312A16FC83009D244C /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+		DCE8621B2A1724DE00F1F6A1 /* XCRemoteSwiftPackageReference "RxFDNetwork" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitee.com/fandongtongxue_admin/RxAlamofire.git";
+			repositoryURL = "https://gitee.com/fandongtongxue_admin/RxFDNetwork.git";
 			requirement = {
 				branch = main;
-				kind = branch;
-			};
-		};
-		DC4D5F802A1702E900630B8B /* XCRemoteSwiftPackageReference "HandyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitee.com/fandongtongxue_admin/HandyJSON.git";
-			requirement = {
-				branch = master;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DC2D6C322A16FC83009D244C /* RxAlamofire */ = {
+		DCE8621C2A1724DE00F1F6A1 /* RxFDNetwork */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DC2D6C312A16FC83009D244C /* XCRemoteSwiftPackageReference "RxAlamofire" */;
-			productName = RxAlamofire;
-		};
-		DC4D5F812A1702E900630B8B /* HandyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DC4D5F802A1702E900630B8B /* XCRemoteSwiftPackageReference "HandyJSON" */;
-			productName = HandyJSON;
+			package = DCE8621B2A1724DE00F1F6A1 /* XCRemoteSwiftPackageReference "RxFDNetwork" */;
+			productName = RxFDNetwork;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

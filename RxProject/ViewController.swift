@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxFDNetwork
 
 class ViewController: UIViewController {
     
@@ -32,6 +33,10 @@ class ViewController: UIViewController {
             .distinctUntilChanged()
             .bind(to: viewModel.searchText)
             .disposed(by: disposeBag)
+        
+        RxFDNetwork.getSongs(key: "千里之外").subscribe(onNext: { model in
+            debugPrint("当前歌曲数量:\(model.result?.songs.count)")
+        }).disposed(by: disposeBag)
     }
 
 
